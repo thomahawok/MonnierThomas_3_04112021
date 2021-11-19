@@ -1,0 +1,43 @@
+
+.heart{
+     &__icon{
+         &--backg{
+             opacity: 0;
+             transition: opacity 250ms ease-out;
+ 
+             &:hover{
+                 opacity: 1;
+             }
+         }
+     }
+ }
+
+
+.meal__dish{
+   &__price{
+        transition: transform 500ms;
+    }
+
+    &__choice{
+        //transform: translateX(0);
+        transition: transform 500ms;
+
+         &__icon {
+            transform: rotate(180deg);
+            transition: transform 500ms 0.1s;
+         }
+    }      
+
+    
+    &:hover .meal__dish__choice__icon{
+        transform: rotate(0deg);
+    }
+
+    &:hover .meal__dish__choice {
+        transform: translateX(-100%);
+    }
+    
+    &:hover .meal__dish__price{
+        transform: translateX(-100%);
+    }
+}

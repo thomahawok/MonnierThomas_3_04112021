@@ -1,0 +1,25 @@
+$color-primary: #9356DC;
+$color-primary-light-70: lighten($color-primary, 50%);
+$color-secondary: #FF79DA;
+$color-secondary-light-70: lighten($color-secondary, 50%);
+$colur-tretiary: #99E2D0;
+$color-grey: #353535;
+$color-grey-light-5: lighten($color-grey, 5%);
+$color-grey-light-20: lighten($color-grey, 20%);
+$color-grey-light: lighten($color-grey, 73%);
+$color-grey-light-light: lighten($color-grey, 75%);
+$color-withe: #fff;
+$color-black: black;
+$color-green:#2ba387;
+
+$color-gradian: linear-gradient(to top, $color-primary, $color-secondary);
+
+$color-gradain-light: linear-gradient(to top, lighten($color-primary, 5%), lighten($color-secondary, 5%));
+
+
+$map-img: (
+    resto1:url(../pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg),
+    resto2:url(../pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg),
+    resto3:url(../pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg),
+    resto4:url(../pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg),
+);

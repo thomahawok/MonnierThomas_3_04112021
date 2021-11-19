@@ -1,0 +1,26 @@
+.heart{
+   @include center__h-v;
+    height: 3rem;
+    width: 3rem;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+
+    &__icon{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+
+        &--border{
+            color: $color-grey-light-20;  
+        }
+        
+        &--backg{
+            color: transparent;
+            background-clip: text;
+            background-image: $color-gradian;
+        }
+    }
+}

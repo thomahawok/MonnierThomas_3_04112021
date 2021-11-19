@@ -1,0 +1,49 @@
+
+
+@for $i from 1 through 3 {
+    .an-#{$i} {
+        $d: $i*0.1s;
+        
+        animation: anim-dish 1s $d;
+    }
+}
+
+@keyframes anim-dish{
+    0%{
+        transform:translateY(-100px);
+       opacity: 0;
+    }
+
+    70%{
+        transform:translateY(-70px);
+       opacity: 0;
+    }
+
+    100%{
+        transform:translateY(0);
+       opacity: 1;
+    }
+}
+
+/*
+
+@for $i from 1 through 3 {
+    $d: -($i*50px)
+
+}
+*/
+
+/*
+    .delay-0{
+    animation-delay: 900ms;
+    }
+
+    .delay-1{
+        animation-delay: 500ms;
+    }
+
+    .delay-2{
+        animation-delay: 600ms;
+    }
+
+*/
