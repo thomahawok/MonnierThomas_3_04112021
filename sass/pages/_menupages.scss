@@ -57,22 +57,18 @@
         padding: .5rem 1rem;
         margin-bottom: 2rem;
         overflow: hidden;
-       /*
-        animation: anim-dish 10s;
-        */
-
-       
+    
+        animation: anim-dish 3s;
+        
      
         &__description{
             margin: 0;
             width: 100%;
-            
         }
 
         &__description h4, p{
             margin: 0;
             padding-bottom: .5rem;
-            
         }
 
         &__price{
@@ -92,26 +88,6 @@
         }
     }
 }
-
-/*
-.an1{
-    animation: anim-dish 1s;
-}
-
-.an2{
-    animation: anim-dish 1s 0.2s;
-}
-
-.an3{
-    animation: anim-dish 1s 0.4s;
-}
-*/
-
-/*
-.meal__dish:nth-child(2) {
-    animation-delay: calc(2s / 5);
-}
-*/
 
 .center__btn-gradian{
     width: 60%;

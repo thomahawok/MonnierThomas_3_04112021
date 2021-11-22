@@ -26,25 +26,59 @@
   transform: translateX(-100%);
 }
 
-.an-1 {
-  animation: anim-dish 1s 0.1s;
+/* Loader */
+.container {
+  animation: loader-duration 3s both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.container__loader {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+  border: 1rem solid #9356DC;
+  position: relative;
+}
+.container__loader:after {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  bottom: -1rem;
+  right: -1rem;
+  border-radius: 10rem;
+  border: 1rem solid transparent;
+  border-top-color: #FF79DA;
+  animation: spin 1s linear infinite;
 }
 
-.an-2 {
-  animation: anim-dish 1s 0.2s;
-}
-
-.an-3 {
-  animation: anim-dish 1s 0.3s;
-}
-
-@keyframes anim-dish {
+@keyframes spin {
   0% {
-    transform: translateY(-100px);
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-duration {
+  0% {
+    background-color: white;
+    opacity: 1;
+  }
+  100% {
+    background-color: transparent;
     opacity: 0;
   }
-  70% {
-    transform: translateY(-70px);
+}
+/* Menu animation*/
+@keyframes anim-dish {
+  0% {
+    transform: translateY(-20px);
     opacity: 0;
   }
   100% {
@@ -52,27 +86,18 @@
     opacity: 1;
   }
 }
-/*
-
-@for $i from 1 through 3 {
-    $d: -($i*50px)
-
+.meal__dish:nth-child(2) {
+  animation-delay: 0.4s;
 }
-*/
-/*
-    .delay-0{
-    animation-delay: 900ms;
-    }
 
-    .delay-1{
-        animation-delay: 500ms;
-    }
+.meal__dish:nth-child(3) {
+  animation-delay: 0.6s;
+}
 
-    .delay-2{
-        animation-delay: 600ms;
-    }
+.meal__dish:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
-*/
 * {
   box-sizing: border-box;
 }
@@ -444,9 +469,7 @@ p {
   padding: 0.5rem 1rem;
   margin-bottom: 2rem;
   overflow: hidden;
-  /*
-   animation: anim-dish 10s;
-   */
+  animation: anim-dish 3s;
 }
 .meal__dish__description {
   margin: 0;
@@ -473,27 +496,9 @@ p {
   width: 6rem;
 }
 
-/*
-.an1{
-    animation: anim-dish 1s;
-}
-
-.an2{
-    animation: anim-dish 1s 0.2s;
-}
-
-.an3{
-    animation: anim-dish 1s 0.4s;
-}
-*/
-/*
-.meal__dish:nth-child(2) {
-    animation-delay: calc(2s / 5);
-}
-*/
 .center__btn-gradian {
   width: 60%;
   margin: auto;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
