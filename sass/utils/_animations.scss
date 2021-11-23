@@ -1,61 +1,35 @@
 /* Loader */
-.container{
-    animation: loader-duration 3s both;
-    
-    @include center__h-v;
 
-    z-index: 10000;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-
-
-    &__loader{
-        height: 10rem;
-        width: 10rem;
-        border-radius: 10rem;
-        border: 1rem solid $color-primary;
-        position: relative;
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
     }
-
-    &__loader:after{
-        content: '';
-        position: absolute;
-        top: -1rem; left: -1rem;
-        bottom: -1rem;
-        right: -1rem,;
-        border-radius: 10rem;
-        border: 1rem solid transparent;
-        border-top-color: $color-secondary;
-       
-        animation: spin 1s linear infinite;  
+    50%{
+        transform:rotate(180deg);
     }
-}
-
-@keyframes spin{
-    0%{
-        transform: rotate(0);
-    }
-
     100%{
-        transform: rotate(360deg);
+        transform:rotate(360deg);
     }
 }
+
 
 @keyframes loader-duration{
-    0%{
-       background-color: white;
+     0%{
+       
+        opacity:1;
+    }
+
+    60%{
+       
         opacity: 1;
     }
 
     100%{
         background-color: transparent;
         opacity: 0;
+        z-index:-1;
     }
 }
-
-
-
 
 
 

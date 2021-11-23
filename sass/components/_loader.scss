@@ -1,0 +1,38 @@
+/* Loader */
+
+.loader{
+  animation: loader-duration 3s both;
+    
+   @include center__h-v;
+
+  z-index: 10000;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $color-withe;
+
+  & div {
+ 
+    border-radius:100%;
+    position:absolute;
+    border: 0.4rem solid $color-primary;
+    
+    border-bottom:none;
+    border-right:none;
+      
+    margin-left: -70px;
+    margin-top: -70px;
+
+  }
+
+  @for $i from 1 through 6 {
+    .loader__arc--#{$i}{
+      width: calc(16rem - $i*2rem);
+      height: calc(16rem - $i*2rem);
+      left: calc(50.70% + $i*0.35%);
+      top: calc(51.4% + $i*0.7%);
+      animation: rotate 1s linear infinite;
+      animation-delay: calc(.4s + $i*.2s);
+    }
+  }
+}
