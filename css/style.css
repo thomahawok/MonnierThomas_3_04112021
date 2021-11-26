@@ -60,15 +60,19 @@
   }
 }
 .meal__dish:nth-child(2) {
-  animation-delay: 0.4;
+  animation: anim-dish 2s;
 }
 
 .meal__dish:nth-child(3) {
-  animation-delay: 0.6;
+  animation: anim-dish 3s;
 }
 
 .meal__dish:nth-child(4) {
-  animation-delay: 0.8;
+  animation: anim-dish 4s;
+}
+
+.meal__dish:nth-child(5) {
+  animation: anim-dish 5s;
 }
 
 * {
@@ -512,7 +516,7 @@ p {
 .restaurant__cadr__img-mind {
   background-size: cover;
   width: 100%;
-  height: 20rem;
+  height: 25rem;
   margin-bottom: 1rem;
   z-index: -1;
 }
@@ -555,7 +559,6 @@ p {
   cursor: pointer;
   margin-bottom: 2rem;
   overflow: hidden;
-  animation: anim-dish 3s;
 }
 .meal__dish__info {
   display: flex;
