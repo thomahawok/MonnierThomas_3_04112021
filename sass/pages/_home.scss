@@ -17,7 +17,6 @@
     & input{
         border: none;
         background: $color-grey-light;
-    
     }
 
     & span::before{
@@ -42,11 +41,6 @@
         padding: 0;
         margin-bottom: 0;
     }
-
-    & :last-child{
-        width: 80%;
-        margin: 2rem;
-    }
 }
 
 
@@ -63,9 +57,9 @@
         margin: 0 2rem 0 3rem;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        justify-content: center;
         gap: 3rem;
-
+    
         &__container{
             border-radius: 20px;
             background-color: $color-grey-light-light;
@@ -73,7 +67,8 @@
             align-items: center;
             position: relative;
             z-index: auto;
-        
+            width:35rem;
+
             & :first-child{
                 @include center__h-v;
                 background-color: #9356dc;

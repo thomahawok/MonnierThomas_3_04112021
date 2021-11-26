@@ -75,6 +75,51 @@
   animation: anim-dish 5s;
 }
 
+@media only screen and (min-width: 768px) {
+  /*home page*/
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .restaurants h2 {
+    width: 100%;
+  }
+  .restaurants__card {
+    width: 45%;
+  }
+
+  /* Restaurants pages */
+  .resto-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .resto-name {
+    width: 100%;
+  }
+
+  .meal {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /*home page*/
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .restaurants h2 {
+    width: 100%;
+  }
+  .restaurants__card {
+    width: 22%;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -174,16 +219,23 @@ p {
 }
 
 /* page home - btn "explorer nos restauants"*/
-.btn-gradian {
-  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.1);
+.center__btn-gradian {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 15px;
+}
+.center__btn-gradian :first-child {
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.1);
+  width: 15rem;
+  padding: 1.5rem;
+  margin: 2rem;
   border-radius: 3rem;
   color: #fff;
   border: none;
   background: linear-gradient(to top, #9356DC, #FF79DA);
 }
-.btn-gradian:hover {
+.center__btn-gradian :first-child:hover {
   box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to top, #a16be0, #ff93e1);
   cursor: pointer;
@@ -212,6 +264,7 @@ p {
 .heart__icon--backg {
   color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
 
@@ -362,10 +415,6 @@ p {
   padding: 0;
   margin-bottom: 0;
 }
-.explr-restaurants :last-child {
-  width: 80%;
-  margin: 2rem;
-}
 
 /* fonctioning */
 .functioning {
@@ -378,7 +427,7 @@ p {
   margin: 0 2rem 0 3rem;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center;
   gap: 3rem;
 }
 .functioning__btn__container {
@@ -388,6 +437,7 @@ p {
   align-items: center;
   position: relative;
   z-index: auto;
+  width: 35rem;
 }
 .functioning__btn__container :first-child {
   display: flex;
@@ -604,11 +654,6 @@ p {
   color: #fff;
   width: 0rem;
   height: auto;
-}
-
-.center__btn-gradian {
-  width: 60%;
-  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
