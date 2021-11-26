@@ -6,24 +6,21 @@
   opacity: 1;
 }
 
-.meal__dish__price {
+.meal__dish > p {
   transition: transform 500ms;
 }
-.meal__dish__choice {
-  transition: transform 500ms;
+.meal__dish > :last-child {
+  transition: all 500ms;
 }
-.meal__dish__choice__icon {
+.meal__dish > :last-child i {
   transform: rotate(180deg);
   transition: transform 500ms 0.1s;
 }
-.meal__dish:hover .meal__dish__choice__icon {
+.meal__dish:hover i {
   transform: rotate(0deg);
 }
-.meal__dish:hover .meal__dish__choice {
-  transform: translateX(-100%);
-}
-.meal__dish:hover .meal__dish__price {
-  transform: translateX(-100%);
+.meal__dish:hover > :last-child {
+  width: 6rem;
 }
 
 /* Loader */
@@ -63,15 +60,15 @@
   }
 }
 .meal__dish:nth-child(2) {
-  animation-delay: 0.4s;
+  animation-delay: 0.4;
 }
 
 .meal__dish:nth-child(3) {
-  animation-delay: 0.6s;
+  animation-delay: 0.6;
 }
 
 .meal__dish:nth-child(4) {
-  animation-delay: 0.8s;
+  animation-delay: 0.8;
 }
 
 * {
@@ -167,11 +164,12 @@ p {
   text-transform: uppercase;
 }
 
-.meal__dish__price {
+.meal__dish__info > p {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
+/* page home - btn "explorer nos restauants"*/
 .btn-gradian {
   box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -185,37 +183,6 @@ p {
   box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to top, #a16be0, #ff93e1);
   cursor: pointer;
-}
-
-.functioning__btn__container {
-  border-radius: 20px;
-  background-color: #f4f4f4;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: auto;
-}
-.functioning__btn__container__number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #9356dc;
-  border-radius: 100%;
-  width: 2.5rem;
-  height: 2.5rem;
-  left: -1.4rem;
-  color: #fff;
-  font-size: 1.2rem;
-  margin-right: 1.2rem;
-  position: absolute;
-  z-index: 1;
-}
-.functioning__btn__container i {
-  color: #686868;
-  padding: 3rem;
-}
-.functioning__btn__container:hover {
-  background-color: #9256dc25;
 }
 
 .heart {
@@ -317,8 +284,9 @@ p {
 .header {
   height: 60px;
   padding: 12px;
+  position: relative;
 }
-.header__logo {
+.header h1 {
   margin: auto;
   text-align: center;
 }
@@ -349,6 +317,7 @@ p {
   margin-right: 1rem;
 }
 
+/* localisatio,*/
 .localisation {
   display: flex;
   align-items: center;
@@ -375,6 +344,7 @@ p {
   display: block;
 }
 
+/* localisation */
 .explr-restaurants {
   padding: 3.5rem 2rem 3.5rem 2rem;
   background-color: #f4f4f4;
@@ -388,15 +358,16 @@ p {
   padding: 0;
   margin-bottom: 0;
 }
-.explr-restaurants__btn-gradian {
+.explr-restaurants :last-child {
   width: 80%;
   margin: 2rem;
 }
 
+/* fonctioning */
 .functioning {
   margin-bottom: 4rem;
 }
-.functioning__titel {
+.functioning h2 {
   margin-left: 2rem;
 }
 .functioning__btn {
@@ -406,47 +377,119 @@ p {
   flex-direction: column;
   gap: 3rem;
 }
+.functioning__btn__container {
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: auto;
+}
+.functioning__btn__container :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356dc;
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  left: -1.4rem;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+  position: absolute;
+  z-index: 1;
+}
+.functioning__btn__container i {
+  color: #686868;
+  padding: 3rem;
+}
+.functioning__btn__container:hover {
+  background-color: #9256dc25;
+}
 
+/* restaurants */
 .restaurants {
   background-color: #f4f4f4;
   padding: 1rem 1rem 2rem 1rem;
 }
 .restaurants__card {
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
-.restaurants__card__img1 {
+.restaurants__card__resto--1 {
   background-image: url(../pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-position: bottom;
-}
-.restaurants__card__img2 {
-  background-image: url(../pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-position: center;
-}
-.restaurants__card__img3 {
-  background-image: url(../pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-}
-.restaurants__card__img4 {
-  background-image: url(../pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-}
-.restaurants__card__img {
   background-size: cover;
   width: 100%;
   height: 20rem;
-  border-radius: 15px 15px 0 0;
+  border-radius: 1.5rem 1.5rem 0 0;
   margin-bottom: 1rem;
   position: relative;
 }
-.restaurants__card__img__new {
+.restaurants__card__resto--1 :first-child {
   position: absolute;
-  right: 12px;
-  top: 12px;
+  right: 1.2rem;
+  top: 1.2rem;
   background-color: #99e2d0;
-  padding: 7px 10px 7px 10px;
+  padding: 0.7rem 1rem 0.7rem 1rem;
   color: #2ba387;
-  border-radius: 3px;
+  border-radius: 0.3rem;
+}
+.restaurants__card__resto--2 {
+  background-image: url(../pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.restaurants__card__resto--2 :first-child {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  background-color: #99e2d0;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  color: #2ba387;
+  border-radius: 0.3rem;
+}
+.restaurants__card__resto--3 {
+  background-image: url(../pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.restaurants__card__resto--3 :first-child {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  background-color: #99e2d0;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  color: #2ba387;
+  border-radius: 0.3rem;
+}
+.restaurants__card__resto--4 {
+  background-image: url(../pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.restaurants__card__resto--4 :first-child {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  background-color: #99e2d0;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  color: #2ba387;
+  border-radius: 0.3rem;
 }
 .restaurants__card__description {
   height: 7rem;
@@ -460,21 +503,10 @@ p {
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
 }
 
-.header__container {
-  position: relative;
-}
-
-.arrow {
+.header a:first-child {
   position: absolute;
   left: 4rem;
   top: 35%;
-}
-
-.resto-main {
-  margin-top: -4rem;
-  border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
-  padding: 0 2rem 2rem 2rem;
 }
 
 .restaurant__cadr__img-mind {
@@ -482,6 +514,15 @@ p {
   width: 100%;
   height: 20rem;
   margin-bottom: 1rem;
+  z-index: -1;
+}
+
+.resto-main {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  padding: 0 2rem 2rem 2rem;
+  z-index: 1;
 }
 
 .resto-name {
@@ -491,12 +532,12 @@ p {
   justify-content: space-between;
 }
 
-.meal__title {
+.meal > :first-child {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   position: relative;
 }
-.meal__title::after {
+.meal > :first-child::after {
   content: "";
   width: 4rem;
   height: 0.4rem;
@@ -512,34 +553,54 @@ p {
   border-radius: 1.5rem;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  padding: 0.5rem 1rem;
   margin-bottom: 2rem;
   overflow: hidden;
   animation: anim-dish 3s;
 }
-.meal__dish__description {
+.meal__dish__info {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
-  width: 100%;
+  max-width: 100%;
+  flex: 1;
+  overflow: hidden;
+  padding: 0.5rem 0 1rem 1rem;
 }
-.meal__dish__description h4, .meal__dish p {
+.meal__dish__info > :first-child {
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+.meal__dish__info > :first-child > h4 {
   margin: 0;
   padding-bottom: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.meal__dish__price {
-  padding: 0 2rem 2rem 0;
+.meal__dish__info > :first-child > p {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.meal__dish__info > p {
+  padding: 0 1rem 0.5rem 0;
+  margin: 0;
   white-space: nowrap;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-.meal__dish__choice {
+.meal__dish > :last-child {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #99E2D0;
   color: #fff;
-  margin: -1rem -6.5rem -1rem 0rem;
-  width: 6rem;
+  width: 0rem;
+  height: auto;
 }
 
 .center__btn-gradian {

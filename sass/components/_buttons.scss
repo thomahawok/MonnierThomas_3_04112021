@@ -1,3 +1,6 @@
+
+/* page home - btn "explorer nos restauants"*/
+
 .btn-gradian{
     @include box-shadow;
     width: 100%;
@@ -15,39 +18,6 @@
 }
 
 
-.functioning__btn__container{
-    border-radius: 20px;
-    background-color: $color-grey-light-light;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: auto;
-  
-    &__number{
-        @include center__h-v;
-        background-color: #9356dc;
-        border-radius: 100%;
-        width: 2.5rem;
-        height: 2.5rem;
-        left: -1.4rem;
-        color: #fff;
-        font-size: 1.2rem;
-        margin-right: 1.2rem;
-        position: absolute;
-        z-index: 1;
-    }
 
-    & i{
-        color: $color-grey-light-20;
-        padding: 3rem;
-    }
-
-       
-    &:hover{
-        background-color:#9256dc25;
-    }
-    
- 
-}
 
 

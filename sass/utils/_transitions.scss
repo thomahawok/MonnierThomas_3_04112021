@@ -7,37 +7,33 @@
  
              &:hover{
                  opacity: 1;
-             }
-         }
-     }
- }
+            }
+        }
+    }
+}
 
 
 .meal__dish{
-   &__price{
+   & > p {
         transition: transform 500ms;
     }
 
-    &__choice{
-        //transform: translateX(0);
-        transition: transform 500ms;
+    & > :last-child{
+        transition: all 500ms;
 
-         &__icon {
+        & i {
             transform: rotate(180deg);
             transition: transform 500ms 0.1s;
-         }
+        }
     }      
 
     
-    &:hover .meal__dish__choice__icon{
+    &:hover i{
         transform: rotate(0deg);
     }
 
-    &:hover .meal__dish__choice {
-        transform: translateX(-100%);
+    &:hover > :last-child {
+        width: 6rem;
     }
-    
-    &:hover .meal__dish__price{
-        transform: translateX(-100%);
-    }
+ 
 }
