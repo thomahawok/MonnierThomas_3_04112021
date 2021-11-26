@@ -47,8 +47,10 @@
     }
 }
 
-@for $i from 2 through 4{
-    .meal__dish:nth-child(#{$i}) {
-        animation-delay: calc($i / 5);
+@for $t from 2 through 5{
+    .meal__dish:nth-child(#{$t}) {
+        
+        animation: anim-dish #{$t}s;
     }
+
 }
