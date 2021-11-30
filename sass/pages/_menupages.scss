@@ -1,11 +1,11 @@
 
-.header a:first-child{
+.header a:first-child{ /* Fléche de retour au menu principal */
     position: absolute;
     left: 4rem;
     top: 35%;
 }
 
-.restaurant__cadr__img-mind{
+.restaurant__cadr__img-mind{ /* Image du restaurant */
     background-size: cover;
     width: 100%;
     height:25rem;
@@ -13,7 +13,7 @@
     z-index: -1;
 }
 
-.resto-main{
+.resto-main{ 
     margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
@@ -28,17 +28,17 @@
 
 .meal{
     
-    & > :first-child{
+    & > :first-child{   /* tire h3 Entrées, plats, desserts */
         margin-bottom: 1.5rem;
         padding-bottom: 1rem;
         position: relative;
     }
 
-    & > :first-child::after{
+    & > :first-child::after{    /* Souligement du titre dito */
         content: "";
         width: 4rem;
         height: .4rem;
-        background-color: #99e2d0;
+        background-color: $color-secondary;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -64,13 +64,13 @@
             padding: .5rem 0 1rem 1rem;
         }
      
-        &__info> :first-child{
+        &__info> :first-child{ /* Description des plats */
             margin: 0;
             max-width: 100%;
             overflow: hidden;
          }
 
-        &__info > :first-child > h4 {
+        &__info > :first-child > h4 { 
             margin: 0;
             padding-bottom: .5rem;
             text-overflow: ellipsis;
@@ -87,7 +87,7 @@
             white-space: nowrap;
         }
 
-        &__info > p {
+        &__info > p {   /* Prix des plats */
             padding: 0 1rem .5rem 0;
             margin: 0;
             white-space: nowrap;
@@ -96,7 +96,7 @@
             align-items: flex-end;
         }
 
-        & > :last-child{
+        & > :last-child{  /* Icone check */
             @include center__h-v;
             background-color: $colur-tretiary;
             color: #fff;
@@ -105,9 +105,3 @@
         }
     }
 }
-
-.center__btn-gradian{
-   // width: 60%;
-    //margin: auto;
-}
-
