@@ -1,18 +1,18 @@
-
+/* Heart */
 .heart{
      &__icon{
          &--backg{
              opacity: 0;
              transition: opacity 250ms ease-out;
- 
+            
              &:hover{
-                 opacity: 1;
+                opacity: 1;
             }
         }
     }
 }
 
-
+/* Dish choice */
 .meal__dish{
    & > p {
         transition: transform 500ms;
@@ -27,7 +27,6 @@
         }
     }      
 
-    
     &:hover i{
         transform: rotate(0deg);
     }
@@ -35,5 +34,4 @@
     &:hover > :last-child {
         width: 6rem;
     }
- 
 }

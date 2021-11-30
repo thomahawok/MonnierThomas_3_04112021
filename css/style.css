@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Heart */
 .heart__icon--backg {
   opacity: 0;
   transition: opacity 250ms ease-out;
@@ -6,6 +8,7 @@
   opacity: 1;
 }
 
+/* Dish choice */
 .meal__dish > p {
   transition: transform 500ms;
 }
@@ -51,7 +54,7 @@
 /* Menu animation*/
 @keyframes anim-dish {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -166,7 +169,6 @@ h4 {
 
 p {
   font-size: 1.5rem;
-  font-weight: 100;
 }
 
 .localisation span {
@@ -558,12 +560,14 @@ p {
 }
 
 .header a:first-child {
+  /* Fléche de retour au menu principal */
   position: absolute;
   left: 4rem;
   top: 35%;
 }
 
 .restaurant__cadr__img-mind {
+  /* Image du restaurant */
   background-size: cover;
   width: 100%;
   height: 25rem;
@@ -587,15 +591,17 @@ p {
 }
 
 .meal > :first-child {
+  /* tire h3 Entrées, plats, desserts */
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   position: relative;
 }
 .meal > :first-child::after {
+  /* Souligement du titre dito */
   content: "";
   width: 4rem;
   height: 0.4rem;
-  background-color: #99e2d0;
+  background-color: #FF79DA;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -620,6 +626,7 @@ p {
   padding: 0.5rem 0 1rem 1rem;
 }
 .meal__dish__info > :first-child {
+  /* Description des plats */
   margin: 0;
   max-width: 100%;
   overflow: hidden;
@@ -639,6 +646,7 @@ p {
   white-space: nowrap;
 }
 .meal__dish__info > p {
+  /* Prix des plats */
   padding: 0 1rem 0.5rem 0;
   margin: 0;
   white-space: nowrap;
@@ -647,6 +655,7 @@ p {
   align-items: flex-end;
 }
 .meal__dish > :last-child {
+  /* Icone check */
   display: flex;
   align-items: center;
   justify-content: center;
