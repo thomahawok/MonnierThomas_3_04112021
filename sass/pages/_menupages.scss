@@ -38,7 +38,7 @@
         content: "";
         width: 4rem;
         height: .4rem;
-        background-color: $color-secondary;
+        background-color: $color-tretiary;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -98,7 +98,7 @@
 
         & > :last-child{  /* Icone check */
             @include center__h-v;
-            background-color: $colur-tretiary;
+            background-color: $color-tretiary;
             color: #fff;
             width: 0rem;
             height: auto;
