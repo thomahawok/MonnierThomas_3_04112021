@@ -9,13 +9,17 @@
 }
 
 /* Dish choice */
-.meal__dish > p {
-  transition: transform 500ms;
+.meal__dish {
+  /*
+  & > p {
+       transition: transform 500ms;
+   }
+   */
 }
-.meal__dish > :last-child {
-  transition: all 500ms;
+.meal__dish :last-child {
+  transition: 500ms;
 }
-.meal__dish > :last-child i {
+.meal__dish :last-child i {
   transform: rotate(180deg);
   transition: transform 500ms 0.1s;
 }
@@ -220,7 +224,7 @@ p {
   font-weight: bold;
 }
 
-/* page home - btn "explorer nos restauants"*/
+/* btn gradian*/
 .center__btn-gradian {
   display: flex;
   align-items: center;
@@ -485,6 +489,7 @@ p {
   position: relative;
 }
 .restaurants__card__resto--1 :first-child {
+  /* Nouveau */
   position: absolute;
   right: 1.2rem;
   top: 1.2rem;
@@ -503,6 +508,7 @@ p {
   position: relative;
 }
 .restaurants__card__resto--2 :first-child {
+  /* Nouveau */
   position: absolute;
   right: 1.2rem;
   top: 1.2rem;
@@ -521,6 +527,7 @@ p {
   position: relative;
 }
 .restaurants__card__resto--3 :first-child {
+  /* Nouveau */
   position: absolute;
   right: 1.2rem;
   top: 1.2rem;
@@ -539,6 +546,7 @@ p {
   position: relative;
 }
 .restaurants__card__resto--4 :first-child {
+  /* Nouveau */
   position: absolute;
   right: 1.2rem;
   top: 1.2rem;

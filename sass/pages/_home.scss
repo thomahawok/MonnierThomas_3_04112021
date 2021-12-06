@@ -118,14 +118,14 @@
                 margin-bottom: 1rem;
                 position: relative;
 
-                & :first-child{
+                & :first-child{ /* Nouveau */
                     position: absolute;
                     right: 1.2rem;
                     top: 1.2rem;
                     background-color: #99e2d0;
                     padding: .7rem 1rem .7rem 1rem;
                     color: $color-green;
-                    border-radius: 0.3rem ;
+                    border-radius: 0.3rem;
                 }
             }
         }
